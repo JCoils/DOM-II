@@ -5,8 +5,9 @@ funLogo.addEventListener("mouseover", () => {
 });
 
 const keypress = document.querySelector("html")
-keypress.addEventListener("keydown", () => {
-  console.log(`Pressed:`);
+keypress.addEventListener("keydown", (event) => {
+  console.log(`Pressed:`)
+  event.stopPropagation();
 });
 
 const scroll = document.querySelector(".content-pick")
